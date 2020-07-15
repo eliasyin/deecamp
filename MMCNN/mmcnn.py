@@ -188,7 +188,7 @@ class MMCNN(nn.Module):
         self.first_maxpooling_size = 4
         self.first_maxpooling_stride = 4
         self.batch_norm_features = sum(self.inception_out_channels)
-        self.dropout_p = 0.2
+        self.dropout_p = 0.4
         # the parameter of the second part :Residual block
         self.res_block_in_channels = [64, 16, 16]
         self.res_block_out_channels = [16, 16, 16]

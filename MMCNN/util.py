@@ -128,7 +128,7 @@ class Util():
         best_acc = 0
         best_loss = float('inf')
         plateau_period = 0
-        optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=0.01)
+        optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=0.04)
         # 用于调整学习率
         scheduler = ReduceLROnPlateau(optimizer, mode='min',
                                     patience=10, verbose=True,
